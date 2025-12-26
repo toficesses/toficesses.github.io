@@ -1,47 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      max-width: 700px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #111;
-    }
-    h1 { font-size: 2.5rem; margin-bottom: 0.2em; }
-    h2 { margin-top: 2em; }
-    a { color: #2563eb; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>yourusername — Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <header>
+    <div class="container nav">
+      <a href="index.html">yourusername</a>
+      <nav>
+        <a href="education/">Education</a>
+        <a href="work/">Work</a>
+        <a href="projects/">Projects</a>
+        <a href="skills/">Skills</a>
+        <a href="rnd/">R&D</a>
+        <a href="hobbies/">Hobbies</a>
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
+        <a href="design/">Design</a>
+      </nav>
+    </div>
+  </header>
 
-  <h1>Your Name</h1>
-  <p><strong>Electrical Engineer</strong> — hardware, systems, and design.</p>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Hello — I’m your name.</h1>
+        <p class="muted">I build hardware and software for scientific and embedded systems. This site showcases my education, work, and project portfolio.</p>
+        <p><a href="assets/files/resume.pdf">Download Resume</a></p>
+      </div>
+      <aside>
+        <div class="card">
+          <img src="assets/img/headshot.jpg" alt="headshot" style="width:100%;height:auto;display:block" />
+          <p style="margin-top:0.5rem">Short tagline or current role</p>
+        </div>
+      </aside>
+    </section>
 
-  <h2>About</h2>
-  <p>
-    I’m an electrical engineer interested in analog design, embedded systems,
-    and building impactful technology.
-  </p>
+    <hr />
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Project 1 — short description</li>
-    <li>Project 2 — short description</li>
-  </ul>
+    <section>
+      <h2>Highlights</h2>
+      <div class="section-grid">
+        <div class="card"><strong>Projects</strong><p>Radiochemical detector, ESP32 peak detector, RTL sequence detector</p></div>
+        <div class="card"><strong>Skills</strong><p>Embedded C, Python, FPGA, signal processing, PCB design</p></div>
+        <div class="card"><strong>Research</strong><p>R&D for sensor pipelines and instrument control</p></div>
+      </div>
+    </section>
 
-  <h2>Links</h2>
-  <p>
-    <a href="https://github.com/yourusername">GitHub</a> ·
-    <a href="https://linkedin.com/in/yourusername">LinkedIn</a> ·
-    <a href="mailto:you@email.com">Email</a>
-  </p>
+  </main>
 
+  <footer class="footer">
+    <div class="container">© yourusername — Built with ❤️</div>
+  </footer>
 </body>
 </html>
