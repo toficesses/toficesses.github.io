@@ -1,28 +1,34 @@
-/* LinkedIn-like styles (boxes, soft grey background, boxed content) */
+/* LinkedIn-like styles (centered layout, left profile column, boxed content) */
 :root{
-  --accent:#0a66c2; /* LinkedIn blue-ish */
+  --accent:#0a66c2; /* LinkedIn blue */
   --muted:#6b6b6b;
-  --bg:#f3f6f8; /* light grey background */
+  --bg:#eef3f8; /* soft light grey used by LinkedIn */
   --card:#ffffff;
-  --max-width:1000px;
+  --max-width:1100px;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;line-height:1.45;color:#111;background:var(--bg)}
 .container{max-width:var(--max-width);margin:0 auto;padding:2rem}
-header{background:transparent;border-bottom:1px solid rgba(0,0,0,0.06)}
+header{background:transparent;border-bottom:1px solid rgba(16,24,40,0.06)}
 .nav{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:1rem 0}
 .nav a{color:#0f1419;text-decoration:none;padding:0.25rem 0.5rem;font-weight:600}
 .nav a:hover{color:var(--accent)}
-.hero{display:grid;grid-template-columns:1fr 300px;gap:2rem;align-items:center;padding:2.5rem 0}
-.hero h1{margin:0;font-size:2rem}
-.hero .card{padding:1.25rem;border-radius:8px;box-shadow:0 1px 2px rgba(16,24,40,0.03)}
-.section{margin-top:1.5rem}
-.section h2{margin:0 0 1rem 0}
-.section .card{background:var(--card);padding:1.25rem;border-radius:8px;border:1px solid rgba(16,24,40,0.06);box-shadow:0 1px 2px rgba(16,24,40,0.03)}
-.section-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
-.project-hero{width:100%;height:160px;background:linear-gradient(180deg,#f6f8fa,#eef3f8);display:flex;align-items:center;justify-content:center;color:#7a7a7a;border-radius:6px}
-.card p, .card ul{margin:0}
-.footer{border-top:1px solid rgba(0,0,0,0.06);padding:2rem 0;text-align:center;color:var(--muted);margin-top:2rem}
+.page{display:grid;grid-template-columns:280px 1fr;gap:1.5rem;align-items:start;margin-top:1rem}
+.profile-card{background:var(--card);padding:1.25rem;border-radius:8px;border:1px solid rgba(16,24,40,0.06);box-shadow:0 1px 2px rgba(16,24,40,0.03);text-align:center}
+.profile-card .avatar{width:120px;height:120px;border-radius:999px;object-fit:cover;margin:0 auto 0.75rem;display:block}
+.profile-card h1{margin:.25rem 0;font-size:1.2rem}
+.profile-card .headline{color:var(--muted);font-size:0.95rem;margin-bottom:0.75rem}
+.profile-card .contact a{color:var(--accent);text-decoration:none}
+.profile-card .button{display:inline-block;margin-top:0.5rem;padding:0.45rem 0.8rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none;font-weight:600}
+.main-column .section-card{background:var(--card);padding:1.25rem;border-radius:8px;border:1px solid rgba(16,24,40,0.06);box-shadow:0 1px 2px rgba(16,24,40,0.03);margin-bottom:1rem}
+.main-column .section-card h2{margin-top:0;margin-bottom:0.75rem;font-size:1.25rem}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.project-card{display:block;color:inherit;text-decoration:none}
+.project-card .project-hero{width:100%;height:140px;background:linear-gradient(180deg,#f6f8fa,#eef3f8);display:flex;align-items:center;justify-content:center;color:#7a7a7a;border-radius:6px;margin-bottom:0.75rem}
+.project-card h3{margin:0 0 0.4rem 0}
+.project-card p{margin:0;color:var(--muted)}
+.footer{border-top:1px solid rgba(16,24,40,0.06);padding:2rem 0;text-align:center;color:var(--muted);margin-top:2rem}
 .breadcrumb{font-size:0.9rem;color:var(--muted);margin-bottom:1rem}
-@media(max-width:800px){.hero{grid-template-columns:1fr;}.nav{flex-wrap:wrap}.hero h1{font-size:1.4rem}.hero .card{margin-top:0.5rem}}
+@media(max-width:900px){.page{grid-template-columns:1fr}.profile-card{display:flex;gap:0.75rem;align-items:center}
+.profile-card .avatar{width:72px;height:72px}
+.profile-card h1{font-size:1rem}.main-column .section-card{padding:1rem}}

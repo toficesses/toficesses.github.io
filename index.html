@@ -20,51 +20,47 @@
   </header>
 
   <main class="container">
-    <section class="hero">
-      <div>
-        <h1>Hello — I’m Tofic.</h1>
-        <p class="muted">I build hardware and software for scientific and embedded systems. This site showcases my education, work, and project portfolio.</p>
-        <p><a href="assets/files/resume.pdf">Download Resume</a></p>
-      </div>
-      <aside>
-        <div class="card">
-          <img src="assets/img/headshot.jpg" alt="headshot" style="width:100%;height:auto;display:block" />
-          <p style="margin-top:0.5rem">Short tagline or current role</p>
-        </div>
+    <div class="page">
+      <aside class="profile-card">
+        <img class="avatar" src="assets/img/headshot.jpg" alt="Tofic" />
+        <h1>Tofic</h1>
+        <div class="headline">Electrical Engineer — instrumentation & embedded systems</div>
+        <div class="contact"><a href="mailto:tesses@berkeley.edu">tesses@berkeley.edu</a> · <a href="https://www.linkedin.com/in/tofic-esses/">LinkedIn</a></div>
+        <a class="button" href="assets/files/resume.pdf">Download Resume</a>
       </aside>
-    </section>
 
-    <hr />
+      <div class="main-column">
+        <section id="about" class="section-card">
+          <h2>About</h2>
+          <p><strong>Tofic</strong> is an electrical engineer and embedded-systems designer focused on instrumentation, firmware, and signal-processing pipelines for scientific applications. He has experience in analog and digital electronics, PCB design, FPGA/RTL development, and embedded firmware. He enjoys turning prototypes into reliable systems and collaborating across hardware and software boundaries.</p>
+        </section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <a class="card" href="projects/radiochemical-detector/">
-          <div class="project-hero">Radiochemical Detector</div>
-          <h3>Radiochemical Detector</h3>
-          <p>Detector and signal processing for low-rate radiochemical experiments.</p>
-        </a>
-        <a class="card" href="projects/esp32-peak-detector/">
-          <div class="project-hero">ESP32 Peak Detector</div>
-          <h3>ESP32 Peak Detector</h3>
-          <p>Real-time peak detection and logging on ESP32 hardware.</p>
-        </a>
-        <a class="card" href="projects/rtl-sequence-detector/">
-          <div class="project-hero">RTL Sequence Detector</div>
-          <h3>RTL Sequence Detector</h3>
-          <p>FPGA-based RTL detector for digital stream analysis.</p>
-        </a>
+        <section id="projects" class="section-card">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <a class="project-card" href="projects/radiochemical-detector/">
+              <div class="project-hero">Radiochemical Detector</div>
+              <h3>Radiochemical Detector</h3>
+              <p>Detector and signal processing for low-rate radiochemical experiments.</p>
+            </a>
+
+            <a class="project-card" href="projects/esp32-peak-detector/">
+              <div class="project-hero">ESP32 Peak Detector</div>
+              <h3>ESP32 Peak Detector</h3>
+              <p>Real-time peak detection and logging on ESP32 hardware.</p>
+            </a>
+
+            <a class="project-card" href="projects/rtl-sequence-detector/">
+              <div class="project-hero">RTL Sequence Detector</div>
+              <h3>RTL Sequence Detector</h3>
+              <p>FPGA-based RTL detector for digital stream analysis.</p>
+            </a>
+
+          </div>
+        </section>
+
       </div>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <div class="card">
-        <p><strong>Tofic</strong> is an electrical engineer and embedded-systems designer focused on instrumentation, firmware, and signal-processing pipelines for scientific applications. He has experience in analog and digital electronics, PCB design, FPGA/RTL development, and embedded firmware. He enjoys turning prototypes into reliable systems and collaborating across hardware and software boundaries.</p>
-        <p>Contact: <a href="mailto:tesses@berkeley.edu">tesses@berkeley.edu</a> · <a href="https://www.linkedin.com/in/tofic-esses/">LinkedIn</a></p>
-      </div>
-    </section>
-
+    </div>
   </main>
 
   <footer class="footer">
