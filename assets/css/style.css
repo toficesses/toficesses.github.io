@@ -20,6 +20,8 @@ header{background:transparent;border-bottom:1px solid rgba(16,24,40,0.06)}
 .profile-card .headline{color:var(--muted);font-size:0.95rem;margin-bottom:0.75rem}
 .profile-card .contact a{color:var(--accent);text-decoration:none}
 .profile-card .button{display:inline-block;margin-top:0.5rem;padding:0.45rem 0.8rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none;font-weight:600}
+.profile-card .button + .button{margin-left:0.5rem}
+.profile-card .button.button-outline{background:transparent;color:var(--accent);border:1px solid rgba(10,102,194,0.12)}
 .main-column .section-card{background:var(--card);padding:1.25rem;border-radius:8px;border:1px solid rgba(16,24,40,0.06);box-shadow:0 1px 2px rgba(16,24,40,0.03);margin-bottom:1rem}
 .main-column .section-card h2{margin-top:0;margin-bottom:0.75rem;font-size:1.25rem}
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
