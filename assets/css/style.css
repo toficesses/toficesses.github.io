@@ -26,6 +26,8 @@ header{background:transparent;border-bottom:1px solid rgba(16,24,40,0.06)}
 .project-card{display:block;color:inherit;text-decoration:none}
 .project-card .project-hero{width:100%;height:180px;background:linear-gradient(180deg,#f6f8fa,#eef3f8);display:flex;align-items:center;justify-content:center;color:#7a7a7a;border-radius:6px;margin-bottom:0.75rem;overflow:hidden}
 .project-card .project-hero img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.project-gallery{margin-top:1rem}
+.project-gallery img{max-width:100%;display:block;margin:0.75rem 0;border-radius:6px;border:1px solid rgba(16,24,40,0.04)}
 .project-card h3{margin:0 0 0.4rem 0}
 .project-card p{margin:0;color:var(--muted)}
 .footer{border-top:1px solid rgba(16,24,40,0.06);padding:2rem 0;text-align:center;color:var(--muted);margin-top:2rem}
